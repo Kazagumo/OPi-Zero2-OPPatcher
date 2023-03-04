@@ -1,7 +1,7 @@
 #!/bin/bash
 # author:Kazagumo
 # description:simpily replace the file of openwrt for some device
-SCRIPT_PATH=$(cd `dirname $0`; pwd)
+SCRIPT_PATH=$PWD"/OPi-Zero2-OPPatcher"
 OP_PATH=$PWD
 
 echo "[OPi Zero2 Patcher]Starting replace..."
