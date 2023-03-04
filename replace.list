@@ -1,4 +1,4 @@
 package/boot/arm-trusted-firmware-sunxi/
 package/boot/uboot-sunxi/
-openwrt_dir/package/kernel/mac80211/
+package/kernel/mac80211/
 target/linux/sunxi/
