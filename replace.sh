@@ -5,9 +5,9 @@ SCRIPT_PATH=$(cd `dirname $0`; pwd)
 OP_PATH=$PWD
 
 echo "[OPi Zero2 Patcher]Starting replace..."
-if [ ! -f "Makefile" ];then
-    cp $SCRIPT_PATH"/*" $OP_PATH"/" -R
-fi
+
+cp $SCRIPT_PATH"/*" $OP_PATH"/" -R
+
 
 cat $SCRIPT_PATH"/replace.list" | while read line
 do
