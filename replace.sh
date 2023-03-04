@@ -1,21 +1,21 @@
 #!/bin/bash
 # author:Kazagumo
 # description:simpily replace the file of openwrt for some device
-
+SCRIPT_PATH=$(cd `dirname $0`; pwd)
+OP_PATH=$SCRIPT_PATH"/.."
 
 echo "[OPi Zero2 Patcher]Starting replace..."
 if [ ! -f "Makefile" ];then
-    cp ./* ../ -R
-    cd ../
+    cp $SCRIPT_PATH"/*" $OP_PATH"/" -R
 fi
 
-cat replace.list | while read line
+cat $OP_PATH"/replace.list" | while read line
 do
-    if [ -d "./$line" ]; then
-        src_path="./replace_dir/"$line
+    if [ -d $OP_PATH"/$line" ]; then
+        src_path=$OP_PATH"/replace_dir/"$line
         echo "[OPi Zero2 Patcher]Replacing ./"$line" ..."
-        rm -rf "./"$line
-        cp $src_path "./"$line -R
+        rm -rf "$OP_PATH/"$line
+        cp $src_path "$OP_PATH/"$line -R
     else
         echo "[OPi Zero2 Patcher]Error: ./"$line" Not found!"
     fi
