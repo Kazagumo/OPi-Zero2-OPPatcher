@@ -2,7 +2,7 @@
 # author:Kazagumo
 # description:simpily replace the file of openwrt for some device
 SCRIPT_PATH=$(cd `dirname $0`; pwd)
-OP_PATH=$(dirname "$PWD")
+OP_PATH=$PWD
 
 echo "[OPi Zero2 Patcher]Starting replace..."
 if [ ! -f "Makefile" ];then
