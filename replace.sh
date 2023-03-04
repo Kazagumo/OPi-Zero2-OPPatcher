@@ -17,7 +17,7 @@ do
         rm -rf "$OP_PATH/"$line
         cp $src_path "$OP_PATH/"$line -R
     else
-        echo "[OPi Zero2 Patcher]Error: ./"$line" Not found!"
+        echo "[OPi Zero2 Patcher]Error: "$OP_PATH"/"$line" Not found!"
     fi
 done
 
