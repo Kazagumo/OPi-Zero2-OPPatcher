@@ -6,8 +6,6 @@ OP_PATH=$PWD
 
 echo "[OPi Zero2 Patcher]Starting replace..."
 
-cp -r $SCRIPT_PATH"/*" $OP_PATH"/"
-
 
 cat $SCRIPT_PATH"/replace.list" | while read line
 do
