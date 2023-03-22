@@ -13,7 +13,7 @@ do
         src_path=$SCRIPT_PATH"/replace_dir/"$line
         echo "[OPi Zero2 Patcher]Replacing "$PO_PATH"/"$line" ..."
         rm -rf "$OP_PATH/"$line
-        cp $src_path "$OP_PATH/"$line -R
+        cp -R $src_path "$OP_PATH/"$line
     else
         echo "[OPi Zero2 Patcher]Error: "$OP_PATH"/"$line" Not found!"
     fi
