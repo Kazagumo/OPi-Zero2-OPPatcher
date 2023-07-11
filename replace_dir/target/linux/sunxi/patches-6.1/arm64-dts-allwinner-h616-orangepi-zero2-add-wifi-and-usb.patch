@@ -17,7 +17,7 @@ diff -Nur a/arch/arm64/boot/dts/allwinner/sun50i-h616-orangepi-zero2.dts b/arch/
  			color = <LED_COLOR_ID_GREEN>;
  			gpios = <&pio 2 12 GPIO_ACTIVE_HIGH>; /* PC12 */
  		};
-@@ -49,6 +51,42 @@
+@@ -49,6 +51,38 @@
  		regulator-max-microvolt = <5000000>;
  		regulator-always-on;
  	};
@@ -43,10 +43,6 @@ diff -Nur a/arch/arm64/boot/dts/allwinner/sun50i-h616-orangepi-zero2.dts b/arch/
 +
 +};
 +
-+&ehci0 {
-+	status = "disabled";
-+};
-+
 +&ehci1 {
 +	status = "okay";
 +};
@@ -60,7 +56,7 @@ diff -Nur a/arch/arm64/boot/dts/allwinner/sun50i-h616-orangepi-zero2.dts b/arch/
  };
  
  &emac0 {
-@@ -76,6 +114,40 @@
+@@ -76,6 +114,25 @@
  	status = "okay";
  };
  
@@ -82,21 +78,6 @@ diff -Nur a/arch/arm64/boot/dts/allwinner/sun50i-h616-orangepi-zero2.dts b/arch/
 +	};
 +};
 +
-+&ohci0 {
-+	status = "disabled";
-+};
-+
-+&ohci1 {
-+	status = "okay";
-+};
-+
-+&ohci2 {
-+	status = "okay";
-+};
-+
-+&ohci3 {
-+	status = "okay";
-+};
 +
  &r_rsb {
  	status = "okay";
