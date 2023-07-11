@@ -7,6 +7,8 @@ Code is highly WIP and may have untested bugs,if you hate uncertainty,do not use
 - usb&ethernet phy support from https://github.com/vlw/openwrt.
 - support usb port on 13-pin connector.
 - 5Ghz AW859A AP runs at 11ac mode.
+## Known Issue(For this branch):
+- randomized usb port sequence due to load delay
 ### Package Version:
 - 5.10 kernel
 - 5.15.92-1 mac80211
