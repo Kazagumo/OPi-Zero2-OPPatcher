@@ -82,7 +82,7 @@ diff -Nur a/arch/arm64/boot/dts/allwinner/sun50i-h616-orangepi-zero2.dts b/arch/
  &r_rsb {
  	status = "okay";
  
-@@ -211,3 +283,24 @@
+@@ -211,3 +283,30 @@
  	pinctrl-0 = <&uart0_ph_pins>;
  	status = "okay";
  };
@@ -106,4 +106,10 @@ diff -Nur a/arch/arm64/boot/dts/allwinner/sun50i-h616-orangepi-zero2.dts b/arch/
 +&usbphy {
 +	usb1_vbus-supply = <&reg_usb1_vbus>;
 +	status = "okay";
++};
++
++&i2c3 {
++	status = "okay";
++	pinctrl-names = "default";
++	pinctrl-0 = <&i2c3_ph_pins>;
 +};
