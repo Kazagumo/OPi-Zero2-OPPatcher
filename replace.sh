@@ -14,6 +14,7 @@ do
         echo "[OPi Zero2 Patcher]Replacing "$PO_PATH"/"$line" ..."
         rm -rf "$OP_PATH/"$line
         cp -R $src_path "$OP_PATH/"$line
+        find "$OP_PATH/"$line -type d -exec chmod +x {} \;
     else
         echo "[OPi Zero2 Patcher]Error: "$OP_PATH"/"$line" Not found!"
     fi
