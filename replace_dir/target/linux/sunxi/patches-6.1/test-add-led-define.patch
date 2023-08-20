@@ -1,0 +1,14 @@
+diff -Nur a/arch/arm64/boot/dts/allwinner/sun50i-h616-orangepi-zero2.dts b/arch/arm64/boot/dts/allwinner/sun50i-h616-orangepi-zero2.dts
+--- a/arch/arm64/boot/dts/allwinner/sun50i-h616-orangepi-zero2.dts	2023-07-16 03:42:38.000000000 +0800
++++ b/arch/arm64/boot/dts/allwinner/sun50i-h616-orangepi-zero2.dts	2023-08-21 02:14:24.010127800 +0800
+@@ -19,6 +19,10 @@
+ 	aliases {
+ 		ethernet0 = &emac0;
+ 		serial0 = &uart0;
++		led-boot = &led-0;
++		led-failsafe = &led-0;
++		led-running = &led-1;
++		led-upgrade = &led-1;
+ 	};
+ 
+ 	chosen {
