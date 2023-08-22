@@ -110,7 +110,7 @@ define Device/xunlong_orangepi-zero2
   $(Device/sun50i-h616)
   DEVICE_VENDOR := Xunlong
   DEVICE_MODEL := Orange Pi Zero2
-  DEVICE_PACKAGES := kmod-uwe5622 kmod-phy-realtek
+  DEVICE_PACKAGES := kmod-uwe5622 kmod-phy-realtek hostapd
   SUNXI_DTS_DIR := allwinner/
 endef
 TARGET_DEVICES += xunlong_orangepi-zero2
