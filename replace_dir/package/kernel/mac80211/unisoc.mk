@@ -12,7 +12,7 @@ AW_BIND_VERIFY \
 
 define KernelPackage/uwe5622
   $(call KernelPackage/mac80211/Default)
-  TITLE:= UWE5622(AW562A) Wireless Driver
+  TITLE:= UWE5622(AW859A) Wireless Driver
   DEPENDS+= +kmod-mac80211 +kmod-mmc +@DRIVER_11AC_SUPPORT
   FILES:= \
   $(PKG_BUILD_DIR)/drivers/net/wireless/uwe5622/unisocwifi/sprdwl_ng.ko \
