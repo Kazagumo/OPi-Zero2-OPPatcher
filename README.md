@@ -1,4 +1,9 @@
 # OPi-Zero2-OPPatcher
+
+NOTE:Due to the upstream introduced support of zero2,this repo won't update.
+if you still need WLAN driver(idk what license the driver using),consider .
+
+
 # <font color='red'>**IF YOU NEED COMPILE OTHER TARGET,DO NOT APPLY IT!!!**</font>
 Simpily replace target,uboot and mac80211 files to support h616 cpu and other staff.  
 Code is highly WIP and may have untested bugs,if you don't have the ability of debugging,  
