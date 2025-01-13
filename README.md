@@ -1,7 +1,9 @@
 # OPi-Zero2-OPPatcher
 
 NOTE:Due to the upstream introduced support of zero2,this repo won't update.
-if you still need WLAN driver(idk what license the driver using),consider .
+~~if you still need WLAN driver(idk what license the driver using),consider .~~
+Now I don't have a functional opizero2,further development&debug isn't possible for me.
+I would not update this repo or something related unless I bought a new one.
 
 
 # <font color='red'>**IF YOU NEED COMPILE OTHER TARGET,DO NOT APPLY IT!!!**</font>
